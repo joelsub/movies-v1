@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,46 +8,57 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="./assets/film.svg" alt="" />
-        <span>CinemaFilms</span>
-      </div>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Ayuda</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./assets/film.svg" alt="" />
+          <span>CinemaFilms</span>
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#extrenos">Extrenos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <form id="contact-form">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required />
+    <main>
+      <section id="extrenos">
+        <div>
+          <h2 class="titulo">Proximos extrenos</h2>
+          <div class="image-gallery">
+            <div class="movie-card">
+              <span class="title">ESTRENO</span>
+              <img src="https://i.ebayimg.com/images/g/~lAAAOSwNH9mKz75/s-l1200.webp" alt="Imagen 1" />
+              <span class="title">VER HORARIOS</span>
+            </div>
+            <div class="movie-card">
+              <span class="title">ESTRENO</span>
+              <img src="https://m.media-amazon.com/images/I/714xn6rxXSL.jpg" alt="Imagen 1" />
+              <span class="title">VER HORARIOS</span>
+            </div>
+            <div class="movie-card">
+              <span class="title">ESTRENO</span>
+              <img src="https://m.media-amazon.com/images/I/61CRq2R6i4L._AC_SL1024_.jpg" alt="Imagen 1" />
+              <span class="title">VER HORARIOS</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" required></textarea>
+      <section id="contacto">
+        <form id="contact-form">
+          <h3 class="titulo">Contacto</h3>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
 
-      <button type="submit">Enviar</button>
-    </form>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
 
-    <div class="image-gallery">
-      <div class="movie-card">
-        <span class="title">ESTRENO</span>
-        <img src="https://i.ebayimg.com/images/g/~lAAAOSwNH9mKz75/s-l1200.webp" alt="Imagen 1" />
-        <span class="title">VER HORARIOS</span>
-      </div>
-      <div class="movie-card">
-        <span class="title">ESTRENO</span>
-        <img src="https://m.media-amazon.com/images/I/714xn6rxXSL.jpg" alt="Imagen 1" />
-        <span class="title">VER HORARIOS</span>
-      </div>
-      <div class="movie-card">
-        <span class="title">ESTRENO</span>
-        <img src="https://m.media-amazon.com/images/I/61CRq2R6i4L._AC_SL1024_.jpg" alt="Imagen 1" />
-        <span class="title">VER HORARIOS</span>
-      </div>
-    </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
