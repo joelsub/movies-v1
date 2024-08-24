@@ -9,6 +9,7 @@
 // });
 
 $(document).ready(function () {
+  console.log("hola");
   $("#contact-form").on("submit", function (event) {
     event.preventDefault();
     Swal.fire({
