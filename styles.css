@@ -17,6 +17,15 @@ nav {
   padding: 10px 0;
 }
 
+footer {
+  background-color: #dddddd;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #111010;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -45,6 +54,12 @@ nav ul li a {
 form {
   background-color: #fff;
   max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
@@ -143,6 +158,17 @@ nav {
   justify-content: space-between;
   padding: 1rem;
   width: 100% !important;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 100% !important;
 }
 
 .titulo {
