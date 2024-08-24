@@ -183,3 +183,10 @@ nav {
   text-align: center;
   margin: 20px 0;
 }
+
+
+.footer-align{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
