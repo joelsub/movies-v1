@@ -17,6 +17,16 @@ nav {
     padding: 10px 0;
 }
 
+footer{
+    background-color: #DDDDDD;
+   
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #111010;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
